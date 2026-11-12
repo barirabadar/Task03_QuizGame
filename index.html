@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster | Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <header>
+            <h1>Quiz<span>Master</span></h1>
+            <p>Test your knowledge and challenge yourself!</p>
+        </header>
+
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="screen">
+            <div class="icon">✦</div>
+            <h2>Welcome to the Quiz!</h2>
+            <p>Ready to test your knowledge?</p>
+            <p class="small-text">
+                5 Questions &nbsp; | &nbsp; Multiple Choice
+            </p>
+            <button id="start-btn">Start Quiz</button>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+
+            <div class="quiz-info">
+                <span id="question-number">Question 1 of 5</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h2 id="question">Question appears here</h2>
+
+            <div id="answer-buttons" class="answer-buttons"></div>
+
+            <p id="feedback"></p>
+
+            <button id="next-btn" class="hidden">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen hidden">
+            <div class="result-icon">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p class="result-text">Your final score is:</p>
+
+            <div class="final-score" id="final-score">0 / 5</div>
+
+            <p id="result-message"></p>
+
+            <button id="restart-btn">Play Again</button>
+        </section>
+
+        <footer>
+            <p>© 2026 QuizMaster | Learn Something New Every Day</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
